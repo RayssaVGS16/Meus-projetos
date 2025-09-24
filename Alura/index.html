@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <section class="fundo">
+
+        <img src="Comic_Logo_Intro_edited.jpg" alt="fundo" class="img_fundo">
+        <header>
+            <nav>
+                <img src="Marvel-Studios-logo.png" alt="Logo" class="logo">
+                <ul>
+                    <li><a href="#inicio">Inicío</a></li>
+                    <li><a href="#historia">História</a></li>
+                    <li><a href="#stanlee">Stan Lee</a></li>
+                    <li><a href="#filme">Filmes</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <div id="acessibilidade" class="menu-acessibilidade">
+                    <button id="botao-acessibilidade"
+                        class="btn btn-primary fw-bold rotacao-botao">acessibilidade</button>
+                    <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+                        <button id="aumentar-fonte" class="btn btn-primary fw-bold">A+</button>
+                        <button id="diminuir-fonte" class="btn btn-primary fw-bold">A-</button>
+                        <button id="alterna-contraste" class="btn btn-primary fw-bold"> <i
+                                class="bi bi-shadows"></i></button>
+            </nav>
+        </header>
+        <section id="home">
+            <div class="conteudo">
+                <h1>Marvel</h1>
+                <a href="#">EXPLORE</a>
+            </div>
+        </section>
+    </section>
+    <div class="listas">
+        <section id="historia">
+            <h2>História</h2>
+            <p>
+                A Marvel surgiu em 1939 como Timely Publications, fundada por Martin Goodman em Nova York. Sua primeira
+                grande revista foi Marvel Comics #1, que apresentou personagens como o Tocha Humana original e Namor, o
+                Príncipe Submarino.
+
+                Nos anos 1960, já como Marvel Comics, sob a liderança de Stan Lee, Jack Kirby e Steve Ditko, a editora
+                revolucionou os quadrinhos com heróis mais humanos e complexos, criando personagens icônicos como
+                Homem-Aranha, Quarteto Fantástico, X-Men e Vingadores.
+
+                Ao longo das décadas seguintes, a Marvel expandiu seu universo para TV e cinema, culminando no Marvel
+                Studios, que em 2008 lançou Homem de Ferro e deu início ao Universo Cinematográfico Marvel (MCU).
+            </p>
+            <img src="Universo_Marvel.png" alt="universo marvel" class="universo">
+        </section>
+        <section id="stanlee">
+            <h2>Stan Lee</h2>
+            <p>
+                Stan Lee (1922 – 2018) foi um roteirista, editor e produtor norte-americano, e uma das figuras mais
+                influentes da indústria dos quadrinhos. Começou a trabalhar na Timely Comics (futura Marvel) nos anos
+                1940 e, junto com artistas como Jack Kirby e Steve Ditko, revolucionou o gênero nos anos 1960.
+
+                Ele cocriou personagens icônicos como Homem-Aranha, Homem de Ferro, Hulk, Thor, X-Men, Quarteto
+                Fantástico, Pantera Negra e muitos outros. Sua marca registrada era dar aos heróis características
+                humanas — problemas pessoais, dilemas morais e falhas — tornando-os mais próximos do público.
+
+                Além dos quadrinhos, Stan Lee se tornou um embaixador da Marvel no cinema, aparecendo em participações
+                especiais (“cameos”) em quase todos os filmes do estúdio, e deixou um legado duradouro para a cultura
+                pop mundial.
+            </p>
+            <img src="kKeyWoFtTqOPsbmwylNHmuB3En9.webp" alt="stanlee" class="stan">
+        </section>
+        <section id="filme">
+            <h2>Filmes</h2>
+            <div class="filmes">
+                <img src="Avengers_Endgame.jpg" alt="vigadores:ultimato">
+                <img src="eaebf9fb4bdb3c676457a71aefd93da7.webp" alt="homem de ferro">
+                <img src="MV5BZjg0NDMxZWItODc4ZC00YjM4LWJmNmYtNjlmZTE5NTEwNzEzXkEyXkFqcGc@._V1_.jpg" alt="vingadores">
+                <img src="Spider-Man_No_Way_Home_poster.jpg" alt="Homem-Aranha">
+                <img src="Thor_Ragnarok_poster.jpg" alt="thor">
+            </div>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <form>
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome"><br>
+                <label for="email">E-mail: </label>
+                <input type="email" name="email" id="email"><br>
+                <label for="telefone">Telefone: </label>
+                <input type="tel" name="telefone" id="telefone"><br>
+                <label for="marketing">Aceita receber notificações?</label>
+                <input type="radio" name="marketing" id="sim">Sim
+                <input type="radio" name="marketing" id="nao">Não
+
+                <hr>
+                <button type="reset">Cancelar</button>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

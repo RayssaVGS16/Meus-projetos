@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Ribeye+Marrow&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Caveat", cursive;
+    background-color: rgb(109, 28, 28);
+}
+
+p {
+    color: rgb(255, 255, 255);
+}
+
+.fundo {
+    background: linear-gradient(rgba(165, 20, 20, 0.589), rgba(87, 10, 10, 0.541));
+    height: 100vh;
+    width: 100%;
+    background-image: url("Comic_Logo_Intro_edited.jpg");
+    /* caminho da imagem */
+    background-size: cover;
+    /* faz a imagem cobrir toda a área */
+    background-position: center;
+    /* centraliza a imagem */
+    background-repeat: no-repeat;
+    /* evita repetição */
+    height: 100vh;
+    /* altura de 100% da tela */
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+.img_fundo {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+}
+
+.logo {
+    width: 90px;
+}
+
+.img {
+    width: 50%;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: rgba(0, 0, 0, 0.507);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.conteudo h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 1 rem;
+    color: rgb(255, 255, 255);
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    /* centraliza na horizontal */
+    align-items: center;
+    /* centraliza na vertical */
+    height: 100vh;
+    /* ocupa a altura total da tela */
+    text-align: center;
+    /* centraliza o texto */
+}
+
+#home .conteudo {
+    display: flex;
+    flex-direction: column;
+    /* empilha h1 e o link */
+    align-items: center;
+    /* centraliza */
+}
+
+header nav ul li a:hover {
+    color: rgb(197, 49, 49);
+}
+
+.conteudo a {
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 10px 50px;
+    border-radius: 50px;
+}
+
+.conteudo a : :hover {
+    color: #000;
+    background: #fff;
+    font-weight: 700;
+}
+
+.listas {
+    margin: 20px;
+    font-size: 20px;
+}
+
+.universo {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stan {
+    width: 250px;
+    /* largura fixa */
+    height: auto;
+    /* mantém proporção */
+    display: block;
+    /* para facilitar centralização */
+    margin: 20px auto;
+    /* centraliza horizontalmente */
+    border-radius: 8px;
+    /* opcional */
+}
+
+.filmes {
+    display: flex;
+    /* coloca os elementos na horizontal */
+    flex-wrap: wrap;
+    /* permite quebrar linha se faltar espaço */
+    gap: 15px;
+    /* espaço entre as imagens */
+    justify-content: center;
+    /* centraliza tudo */
+    padding: 20px 0;
+}
+
+.filmes img {
+    width: 180px;
+    /* define largura fixa ou porcentagem */
+    height: auto;
+    /* mantém proporção */
+    border-radius: 8px;
+    /* opcional - cantos arredondados */
+    object-fit: cover;
+    /* ajusta dentro do tamanho definido */
+    transition: transform 0.3s;
+}
+
+.filmes img:hover {
+    transform: scale(1.05);
+    /* efeito hover opcional */
+}
+
+#botao-acessibilidade {
+    background-color: #7e0c10;
+    /* cor de fundo (vermelho Marvel) */
+    color: white;
+    /* cor do texto */
+    font-size: 12px;
+    /* tamanho da fonte */
+    font-weight: bold;
+    /* negrito */
+    padding: 5px 10px;
+    /* espaço interno do botão */
+    border: none;
+    /* remove borda padrão */
+    border-radius: 12px;
+    /* cantos arredondados */
+    cursor: pointer;
+    /* muda o cursor ao passar o mouse */
+    transition: transform 0.2s, box-shadow 0.2s;
+    /* animação suave */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    /* sombra */
+}
+
+#botao-acessibilidade:hover {
+    transform: scale(1.05);
+    /* aumenta ao passar o mouse */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+    /* sombra maior */
+}
+
+#botao-acessibilidade:active {
+    transform: scale(0.95);
+    /* efeito de clique */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Botões de aumentar/diminuir fonte */
+#aumentar-fonte,
+#diminuir-fonte {
+    background-color: #7e0c10;
+    /* vermelho Marvel */
+    color: white;
+    /* texto branco */
+    font-size: 10px;
+    font-weight: bold;
+    padding: 4px 8px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    /* cantos arredondados */
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Efeito hover */
+#aumentar-fonte:hover,
+#diminuir-fonte:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Efeito ao clicar */
+#aumentar-fonte:active,
+#diminuir-fonte:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    border-radius: 5px;
+    width: 100%;
+    color: #fff;
+}
+
+label {
+    display: block;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+form {
+    border: 2px solid rgb(78, 13, 13);
+    padding: 25px;
+    border-radius: 20px;
+}
